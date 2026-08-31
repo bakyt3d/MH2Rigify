@@ -6,7 +6,7 @@ Requirements
 Blender 5.2 or newer (uses the collapsible sub-panel API)
 A MetaHuman armature already imported into the scene, with its standard bone naming (`hand_l`, `lowerarm_l`, `thumb_01_l`, `spine_01`, etc.)
 Installation
-Download `root_tools.py` from this repo.
+Download `MH2Rigify.py` from this repo.
 In Blender: Edit > Preferences > Add-ons > Install..., select the file.
 Enable the addon in the list.
 Open the 3D Viewport, press N to open the sidebar, and select the MH2Rigify tab.
@@ -24,5 +24,3 @@ Notes
 Every operator works on the first "root" armature it finds in the scene (or the active object, where relevant) and handles both `_l` and `_r` sides automatically.
 Group-runner and pipeline buttons call each step's default settings — adjusting an individual operator's properties (visible in the redo panel after running it) changes what the group and pipeline buttons do too.
 Steps that can't find their expected bones are skipped with a warning rather than stopping the whole run, so a partial or non-standard rig won't halt the pipeline.
-License
-Add your preferred license here.
